@@ -5,6 +5,7 @@ import Main from "./components/main";
 import Navbar from "./components/navbar/navber";
 
 import M_Navbar from "./components/mobile/m.navbar/m.navbar";
+import MMain from "./components/mobile/m.main/m.main";
 
 function App() {
   const [matches, setMatches] = useState(
@@ -27,6 +28,7 @@ function App() {
       {!matches && 
         <div>
           <M_Navbar />
+          <MMain />
         </div>
       }
 
